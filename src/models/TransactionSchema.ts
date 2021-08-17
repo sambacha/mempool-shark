@@ -1,3 +1,4 @@
+// @schema Transactions
 import {Schema} from 'mongoose';
 
 interface IContractSharkTx {
@@ -50,7 +51,7 @@ interface IContractSharkTx {
 
 const TransactionSchema = new Schema(
   {
-    status: String, // current status of the transaction
+    status: String, // @returns current status of the transaction
     hash: String,
     txHash: String,
     to: String,
@@ -63,7 +64,7 @@ const TransactionSchema = new Schema(
     from: String,
     gas: Number,
     gasPrice: String,
-    gasUsed: String, // present on on-chain txns
+    gasUsed: String, //  @returns present on on-chain txns
     nonce: Number,
     value: String,
     blockHash: String,
@@ -71,11 +72,11 @@ const TransactionSchema = new Schema(
     transactionHash: String,
     blockNumber: Number,
     data: String,
-    timestampTx: Number, // the UTC time of first detection of current status
-    transactionIndex: Number, // optional, present if status confirmed, failed
+    timestampTx: Number, //  @returns the UTC time of first detection of current status
+    transactionIndex: Number, // @optiona  present if status confirmed, failed
     logsBloom: String,
 
-    // CUSTOM DATA
+    // @param custom data
     links: {
       etherscan: String,
     },
@@ -83,15 +84,15 @@ const TransactionSchema = new Schema(
     toTokenAddress: String,
     checkedPath: Schema.Types.Mixed,
 
-    // CUSTOM DATA
+    // @param custom data
     whaleData: Schema.Types.Mixed,
-    // FOR PENDING
+    // @param pending
     mempoolData: Schema.Types.Mixed,
-    // FOR CONFIRMED
+    // @param confirmed
     logs: Schema.Types.Mixed,
     events: Schema.Types.Mixed,
 
-    // wich server, when
+    // @param server logging info
     notes: {
       message: String,
       timestampTx: Number,
@@ -101,3 +102,4 @@ const TransactionSchema = new Schema(
 );
 
 export {TransactionSchema, IContractSharkTx};
+// @exports Contract Shark Interface
