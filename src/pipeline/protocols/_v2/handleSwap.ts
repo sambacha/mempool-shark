@@ -3,7 +3,7 @@ import {createPending} from '../../../utils/mongo/savePending';
 import {createConfirm} from '../../../utils/mongo/saveConfirmed';
 import {getTokens} from '../../../utils/web3/getTokens';
 import {IContractSharkTx} from '../../../models/TransactionSchema';
-import {getMempoolData} from '../_decoders/getMempoolData';
+import {getMempoolData} from '../mempool/getMempoolData';
 import {models} from '../../../utils/mongo/config';
 
 const {g} = models;

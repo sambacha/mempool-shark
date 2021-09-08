@@ -5,6 +5,8 @@
     "esModuleInterop": true,
     "declaration": true,
     "declarationMap": true,
+    "importHelpers": true,
+    "downlevelIteration": true,
     "rootDir": "./src",
     "outDir": "./lib",
     "sourceMap": true,

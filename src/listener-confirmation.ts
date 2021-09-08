@@ -2,8 +2,9 @@ import {startMongo, models} from './utils/mongo/config';
 import {escan2, MAIN_WS_PROVIDER, providersForLC} from './utils/web3/providers';
 import {_log, timeout} from './utils/configs/utils';
 import {getPendingTxResponse} from './utils/web3/getTransactions';
-import {proccessPending as pendingTx_uni_sushi} from './swapsDecoders/_uni_sushi/pending';
+import {proccessPending as pendingTx_uni_sushi} from './pipeline/venues/pending';
 import {pendingToConfirm, trashToconfirm} from './utils/mongo/saveConfirmed';
+import { Document as _doc } from 'mongoose';
 
 const {txM, g} = models;
 const {whales} = g;

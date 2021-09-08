@@ -2,7 +2,7 @@ import {startMongo, models} from './utils/mongo/config';
 import {escan1, MAIN_WS_PROVIDER, providersForLM} from './utils/web3/providers';
 import {nowMs, timeout, _log} from './utils/configs/utils';
 import {getPendingTxResponse} from './utils/web3/getTransactions';
-import {proccessPending as pendingTx_uni_sushi} from './swapsDecoders/_uni_sushi/pending';
+import {proccessPending as pendingTx_uni_sushi} from './pipeline/venues/pending';
 
 const {g} = models;
 const {whales, hashes} = g;
