@@ -2,4 +2,9 @@
 node_modules
 lib/
 .env
-
+*.log
+*.tgz
+.cache/
+build/
+dist/
+_dev/

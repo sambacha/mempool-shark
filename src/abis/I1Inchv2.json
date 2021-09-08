@@ -153,7 +153,7 @@
             "name": "dstReceiver",
             "type": "address"
           },
-          { "internalType": "uint256", "name": "amount", "type": "uint256" },
+          {"internalType": "uint256", "name": "amount", "type": "uint256"},
           {
             "internalType": "uint256",
             "name": "minReturnAmount",
@@ -164,9 +164,9 @@
             "name": "guaranteedAmount",
             "type": "uint256"
           },
-          { "internalType": "uint256", "name": "flags", "type": "uint256" },
-          { "internalType": "address", "name": "referrer", "type": "address" },
-          { "internalType": "bytes", "name": "permit", "type": "bytes" }
+          {"internalType": "uint256", "name": "flags", "type": "uint256"},
+          {"internalType": "address", "name": "referrer", "type": "address"},
+          {"internalType": "bytes", "name": "permit", "type": "bytes"}
         ],
         "internalType": "struct OneInchExchange.SwapDescription",
         "name": "desc",
@@ -179,9 +179,9 @@
             "name": "targetWithMandatory",
             "type": "uint256"
           },
-          { "internalType": "uint256", "name": "gasLimit", "type": "uint256" },
-          { "internalType": "uint256", "name": "value", "type": "uint256" },
-          { "internalType": "bytes", "name": "data", "type": "bytes" }
+          {"internalType": "uint256", "name": "gasLimit", "type": "uint256"},
+          {"internalType": "uint256", "name": "value", "type": "uint256"},
+          {"internalType": "bytes", "name": "data", "type": "bytes"}
         ],
         "internalType": "struct IOneInchCaller.CallDescription[]",
         "name": "calls",
@@ -189,14 +189,16 @@
       }
     ],
     "name": "discountedSwap",
-    "outputs": [{ "internalType": "uint256", "name": "returnAmount", "type": "uint256" }],
+    "outputs": [
+      {"internalType": "uint256", "name": "returnAmount", "type": "uint256"}
+    ],
     "stateMutability": "payable",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "owner",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [{"internalType": "address", "name": "", "type": "address"}],
     "stateMutability": "view",
     "type": "function"
   },
@@ -210,7 +212,7 @@
   {
     "inputs": [],
     "name": "paused",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [{"internalType": "bool", "name": "", "type": "bool"}],
     "stateMutability": "view",
     "type": "function"
   },
@@ -223,8 +225,8 @@
   },
   {
     "inputs": [
-      { "internalType": "contract IERC20", "name": "token", "type": "address" },
-      { "internalType": "uint256", "name": "amount", "type": "uint256" }
+      {"internalType": "contract IERC20", "name": "token", "type": "address"},
+      {"internalType": "uint256", "name": "amount", "type": "uint256"}
     ],
     "name": "rescueFunds",
     "outputs": [],
@@ -260,7 +262,7 @@
             "name": "dstReceiver",
             "type": "address"
           },
-          { "internalType": "uint256", "name": "amount", "type": "uint256" },
+          {"internalType": "uint256", "name": "amount", "type": "uint256"},
           {
             "internalType": "uint256",
             "name": "minReturnAmount",
@@ -271,9 +273,9 @@
             "name": "guaranteedAmount",
             "type": "uint256"
           },
-          { "internalType": "uint256", "name": "flags", "type": "uint256" },
-          { "internalType": "address", "name": "referrer", "type": "address" },
-          { "internalType": "bytes", "name": "permit", "type": "bytes" }
+          {"internalType": "uint256", "name": "flags", "type": "uint256"},
+          {"internalType": "address", "name": "referrer", "type": "address"},
+          {"internalType": "bytes", "name": "permit", "type": "bytes"}
         ],
         "internalType": "struct OneInchExchange.SwapDescription",
         "name": "desc",
@@ -286,9 +288,9 @@
             "name": "targetWithMandatory",
             "type": "uint256"
           },
-          { "internalType": "uint256", "name": "gasLimit", "type": "uint256" },
-          { "internalType": "uint256", "name": "value", "type": "uint256" },
-          { "internalType": "bytes", "name": "data", "type": "bytes" }
+          {"internalType": "uint256", "name": "gasLimit", "type": "uint256"},
+          {"internalType": "uint256", "name": "value", "type": "uint256"},
+          {"internalType": "bytes", "name": "data", "type": "bytes"}
         ],
         "internalType": "struct IOneInchCaller.CallDescription[]",
         "name": "calls",
@@ -296,12 +298,16 @@
       }
     ],
     "name": "swap",
-    "outputs": [{ "internalType": "uint256", "name": "returnAmount", "type": "uint256" }],
+    "outputs": [
+      {"internalType": "uint256", "name": "returnAmount", "type": "uint256"}
+    ],
     "stateMutability": "payable",
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "address", "name": "newOwner", "type": "address" }],
+    "inputs": [
+      {"internalType": "address", "name": "newOwner", "type": "address"}
+    ],
     "name": "transferOwnership",
     "outputs": [],
     "stateMutability": "nonpayable",

@@ -110,26 +110,26 @@
             "name": "dstReceiver",
             "type": "address"
           },
-          { "internalType": "uint256", "name": "amount", "type": "uint256" },
+          {"internalType": "uint256", "name": "amount", "type": "uint256"},
           {
             "internalType": "uint256",
             "name": "minReturnAmount",
             "type": "uint256"
           },
-          { "internalType": "uint256", "name": "flags", "type": "uint256" },
-          { "internalType": "bytes", "name": "permit", "type": "bytes" }
+          {"internalType": "uint256", "name": "flags", "type": "uint256"},
+          {"internalType": "bytes", "name": "permit", "type": "bytes"}
         ],
         "internalType": "struct AggregationRouterV3.SwapDescription",
         "name": "desc",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "data", "type": "bytes" }
+      {"internalType": "bytes", "name": "data", "type": "bytes"}
     ],
     "name": "discountedSwap",
     "outputs": [
-      { "internalType": "uint256", "name": "returnAmount", "type": "uint256" },
-      { "internalType": "uint256", "name": "gasLeft", "type": "uint256" },
-      { "internalType": "uint256", "name": "chiSpent", "type": "uint256" }
+      {"internalType": "uint256", "name": "returnAmount", "type": "uint256"},
+      {"internalType": "uint256", "name": "gasLeft", "type": "uint256"},
+      {"internalType": "uint256", "name": "chiSpent", "type": "uint256"}
     ],
     "stateMutability": "payable",
     "type": "function"
@@ -137,7 +137,7 @@
   {
     "inputs": [],
     "name": "owner",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [{"internalType": "address", "name": "", "type": "address"}],
     "stateMutability": "view",
     "type": "function"
   },
@@ -150,8 +150,8 @@
   },
   {
     "inputs": [
-      { "internalType": "contract IERC20", "name": "token", "type": "address" },
-      { "internalType": "uint256", "name": "amount", "type": "uint256" }
+      {"internalType": "contract IERC20", "name": "token", "type": "address"},
+      {"internalType": "uint256", "name": "amount", "type": "uint256"}
     ],
     "name": "rescueFunds",
     "outputs": [],
@@ -187,31 +187,33 @@
             "name": "dstReceiver",
             "type": "address"
           },
-          { "internalType": "uint256", "name": "amount", "type": "uint256" },
+          {"internalType": "uint256", "name": "amount", "type": "uint256"},
           {
             "internalType": "uint256",
             "name": "minReturnAmount",
             "type": "uint256"
           },
-          { "internalType": "uint256", "name": "flags", "type": "uint256" },
-          { "internalType": "bytes", "name": "permit", "type": "bytes" }
+          {"internalType": "uint256", "name": "flags", "type": "uint256"},
+          {"internalType": "bytes", "name": "permit", "type": "bytes"}
         ],
         "internalType": "struct AggregationRouterV3.SwapDescription",
         "name": "desc",
         "type": "tuple"
       },
-      { "internalType": "bytes", "name": "data", "type": "bytes" }
+      {"internalType": "bytes", "name": "data", "type": "bytes"}
     ],
     "name": "swap",
     "outputs": [
-      { "internalType": "uint256", "name": "returnAmount", "type": "uint256" },
-      { "internalType": "uint256", "name": "gasLeft", "type": "uint256" }
+      {"internalType": "uint256", "name": "returnAmount", "type": "uint256"},
+      {"internalType": "uint256", "name": "gasLeft", "type": "uint256"}
     ],
     "stateMutability": "payable",
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "address", "name": "newOwner", "type": "address" }],
+    "inputs": [
+      {"internalType": "address", "name": "newOwner", "type": "address"}
+    ],
     "name": "transferOwnership",
     "outputs": [],
     "stateMutability": "nonpayable",
@@ -224,12 +226,14 @@
         "name": "srcToken",
         "type": "address"
       },
-      { "internalType": "uint256", "name": "amount", "type": "uint256" },
-      { "internalType": "uint256", "name": "minReturn", "type": "uint256" },
-      { "internalType": "bytes32[]", "name": "", "type": "bytes32[]" }
+      {"internalType": "uint256", "name": "amount", "type": "uint256"},
+      {"internalType": "uint256", "name": "minReturn", "type": "uint256"},
+      {"internalType": "bytes32[]", "name": "", "type": "bytes32[]"}
     ],
     "name": "unoswap",
-    "outputs": [{ "internalType": "uint256", "name": "returnAmount", "type": "uint256" }],
+    "outputs": [
+      {"internalType": "uint256", "name": "returnAmount", "type": "uint256"}
+    ],
     "stateMutability": "payable",
     "type": "function"
   },
@@ -240,15 +244,17 @@
         "name": "srcToken",
         "type": "address"
       },
-      { "internalType": "uint256", "name": "amount", "type": "uint256" },
-      { "internalType": "uint256", "name": "minReturn", "type": "uint256" },
-      { "internalType": "bytes32[]", "name": "pools", "type": "bytes32[]" },
-      { "internalType": "bytes", "name": "permit", "type": "bytes" }
+      {"internalType": "uint256", "name": "amount", "type": "uint256"},
+      {"internalType": "uint256", "name": "minReturn", "type": "uint256"},
+      {"internalType": "bytes32[]", "name": "pools", "type": "bytes32[]"},
+      {"internalType": "bytes", "name": "permit", "type": "bytes"}
     ],
     "name": "unoswapWithPermit",
-    "outputs": [{ "internalType": "uint256", "name": "returnAmount", "type": "uint256" }],
+    "outputs": [
+      {"internalType": "uint256", "name": "returnAmount", "type": "uint256"}
+    ],
     "stateMutability": "payable",
     "type": "function"
   },
-  { "stateMutability": "payable", "type": "receive" }
+  {"stateMutability": "payable", "type": "receive"}
 ]
