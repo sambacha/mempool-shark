@@ -1,0 +1,13 @@
+src/abis/**/*
+lib/
+build/
+dist/
+*.min.js
+*.log
+*.html
+*.css
+docs/
+typings/
+typechain/
+.cache/
+
