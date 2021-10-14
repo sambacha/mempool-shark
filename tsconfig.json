@@ -9,6 +9,7 @@
     "downlevelIteration": true,
     "rootDir": "./src",
     "outDir": "./lib",
+    "target": "esnext",
     "sourceMap": true,
     "strict": true,
     "skipLibCheck": true

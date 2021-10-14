@@ -10,6 +10,7 @@ import {handleMultiSwap as handleMultiSwapV3} from './_v3/handleMultiSwap';
 import {handleSwap as handleSwapV3} from './_v3/handleSwap';
 import {handleSwap as handleSwapV2} from './_v2/handleSwap';
 import {checkTx} from '../../utils/web3/checkTxs';
+import {ethers} from 'ethers';
 
 const dexSpacev2 = 'v2';
 const dexSpacev3 = 'v3';
@@ -65,6 +66,7 @@ export const proccessPending = async (
             },
           };
           handleSwapV2(nTx, dexSpace, directConfirm, providers);
+          console.dir(nTx, {depth: null});
         }
       } else {
         _log.warn('proccessPending cant parse tx?', tx.hash);

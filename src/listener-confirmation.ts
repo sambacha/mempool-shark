@@ -4,7 +4,7 @@ import {_log, timeout} from './utils/configs/utils';
 import {getPendingTxResponse} from './utils/web3/getTransactions';
 import {proccessPending as pendingTx_uni_sushi} from './pipeline/protocols/pending';
 import {pendingToConfirm, trashToconfirm} from './utils/mongo/saveConfirmed';
-import { Document as _doc } from 'mongoose';
+import {Document as _doc} from 'mongoose';
 
 const {txM, g} = models;
 const {whales} = g;
