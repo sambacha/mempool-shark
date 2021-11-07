@@ -3,9 +3,13 @@ import {_log} from '../configs/utils';
 import {startMongo} from '../mongo/config';
 import {saveWhale} from '../mongo/saveWhale';
 
+/**
+* @note the 'whales' list is sourced from uniswap governance repo
+* this repo actually overwrites its commits, so you can not by virtue of git history
+* observe changes to this list. 
+*/
 const serverName = 'initWhales';
-const URLData =
-  'https://raw.githubusercontent.com/Uniswap/sybil-list/master/verified.json';
+const URLData = 'https://raw.githubusercontent.com/Uniswap/sybil-list/master/verified.json';
 
 const startServer = () => {
   _log.start('---> startServer ', serverName);
