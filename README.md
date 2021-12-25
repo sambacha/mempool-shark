@@ -15,3 +15,10 @@
 
 
 > GPL-3.0-Only
+
+
+### [Command Line]
+
+```sh
+$ ./bin/run
+```
