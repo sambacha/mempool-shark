@@ -1,7 +1,7 @@
 {
   "name": "mempool-shark",
   "private": false,
-  "version": "0.2.1",
+  "version": "0.3.0",
   "author": "SEE CONTRIBUTORS",
   "engines": {
     "node": ">=14.0.0"
@@ -23,7 +23,6 @@
     "dev:mempool": "npx ts-node-dev ./src/listener-mempool.ts",
     "dev:confirm": "npx ts-node-dev ./src/listener-confirmation.ts",
     "dev:ws": "npx ts-node-dev ./src/_websocket-server.ts",
-    "init:heroku": "npx ts-node ./src/utils/initServer/set-heroku.ts",
     "reset:hard": "npx ts-node ./src/utils/dev-utils/drop-transactions.ts",
     "reset:txs": "npx ts-node ./src/utils/dev-utils/reset-transactions.ts",
     "reset:txc": "npx ts-node ./src/utils/dev-utils/reset-transactions-c.ts",
